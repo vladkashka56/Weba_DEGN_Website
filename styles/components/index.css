@@ -1,0 +1,85 @@
+@layer components {
+  .parallelogram {
+    @apply h-full;
+
+    background: #0d1a21;
+    transform: skew(-20deg);
+
+    & > * {
+      transform: skew(20deg);
+    }
+  }
+
+  .social-icon {
+    @apply text-white text-opacity-50;
+  }
+
+  .main-title {
+    text-shadow: 2px 2px 2px #161616;
+    text-align: left;
+  }
+
+  .main-title span {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .degen-image-wrap {
+    position: relative;
+    margin-left: 56px;
+    margin-top: 56px !important;
+  }
+
+  .modal-title {
+    max-width: 580px;
+  } 
+
+  .connectMintButton {
+    background-image: url(/images/bg/bg_button.png);
+    background-color: #001b2a !important;
+    background-size: cover;
+    background-position: center;
+    color: #ededed !important;
+    border: 1px solid #ededed;
+  }
+
+  .webaverse-logo {
+    height: 60px;
+    width: auto;
+    position: absolute;
+    top: 24px;
+    left: 0;
+  }
+
+  .address-bar {
+    border: 1px solid rgba(255,255,255,1);
+    padding: 2px 8px;
+    background: #007f6d;
+    text-align: left;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #FFFFFF;
+    margin-bottom: -1px;
+  }
+
+  .address-bar span {
+    float: right;
+    cursor: pointer;
+  }
+
+  .address-bar span:hover {
+    color: rgba(255,255,255,0.3);
+  }
+
+  .degen-modal {
+    filter:
+        drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.125))
+        drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.1))
+        drop-shadow(0px -2px 14px rgba(0, 0, 0, 0.5))
+        !important;
+    @apply flex flex-col items-center justify-center !important;
+    @apply md:bg-mint-modal md:bg-center md:bg-no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+}
